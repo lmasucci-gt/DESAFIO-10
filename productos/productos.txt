@@ -24,9 +24,15 @@
 		"thumbnail": "https://celulares.com/Motorola-G100.jpg"
 	},
 	{
+		"id": 5,
 		"title": "Samsung A51",
 		"price": "39999",
-		"thumbnail": "https://celulares.com/Samsung-A51.jpg",
-		"id": 5
+		"thumbnail": "https://celulares.com/Samsung-A51.jpg"
+	},
+	{
+		"title": "Samsung A31",
+		"price": "37999",
+		"thumbnail": "https://celulares.com/Samsung-A31.jpg",
+		"id": 6
 	}
 ]

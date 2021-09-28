@@ -6,9 +6,9 @@ class File{
         this.file = `${__dirname}/${file}`
     }
 
-    async read(){
+     read(){
         try{
-            const productos = await this.fs.promises.readFile(this.file, 'utf-8');
+            const productos = this.fs.readFileSync(this.file, 'utf-8');
             return JSON.parse(productos);
         } catch (err){
             return [];

@@ -15,6 +15,35 @@ app.use(express.static(__dirname + ('/public')));
 const archivo = require('./productos/archivo');
 const Productos = require('./productos/productos');
 
+app.engine(
+    "hbs",
+    handlebars({
+        extname: ".hbs",
+        defaultLayout: "index.hbs",
+        layoutsDir: __dirname + "/views/layouts",
+        partialsDir: __dirname + "/views/partials"
+    })
+);
+
+app.set('views', './views'); // especifica el directorio de vistas
+app.set('view engine', 'hbs'); // registra el motor de plantillas
+
+
+// Implementado para handlebars
+
+router.get('/productos/vista', async (req, res) => {
+    const listaProductos = archivo.read();
+    if(listaProductos){ 
+        res.render('productList', { listProductos: listaProductos, listExists:true })
+    }
+});
+
+router.get('/productos/nuevo', async (req, res) => {
+    const listaProductos = archivo.read();
+    if(listaProductos){ 
+        res.render('newProduct')
+    }
+});
 
 // Me devuelve un json con todos los productos, en caso contrario, devuelve un mensaje de error
 router.get('/productos/listar', async (req, res) =>{
