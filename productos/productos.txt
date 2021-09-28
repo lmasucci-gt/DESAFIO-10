@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"title": "Samsung-s8",
+		"price": 70000,
+		"thumbnail": "https://celulares.com/Samsung-s8.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Nokia-1100",
+		"price": 5500,
+		"thumbnail": "https://celulares.com/Nokia-1100.jpg"
+	},
+	{
+		"id": 3,
+		"title": "Xiami-A1",
+		"price": 30000,
+		"thumbnail": "https://celulares.com/Xiami-A1.jpg"
+	},
+	{
+		"id": 4,
+		"title": "Motorola-G100",
+		"price": 90000,
+		"thumbnail": "https://celulares.com/Motorola-G100.jpg"
+	},
+	{
+		"title": "Samsung A51",
+		"price": "39999",
+		"thumbnail": "https://celulares.com/Samsung-A51.jpg",
+		"id": 5
+	}
+]
